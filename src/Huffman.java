@@ -6,6 +6,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class Huffman {
 	int R = 256;
 
@@ -139,15 +141,4 @@ public class Huffman {
 		reader.close();
 	}
 
-	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		Huffman huff = new Huffman();
-		int pilih = in.nextInt();
-		if (pilih == 1) {
-			huff.compress("D:\\Test.txt");
-		} else {
-			huff.decompress("D:\\Test.bin");
-		}
-		in.close();
-	}
 }
