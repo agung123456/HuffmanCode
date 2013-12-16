@@ -13,9 +13,11 @@ import javax.swing.LayoutStyle;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.UIManager;
 import javax.swing.WindowConstants;
+import javax.swing.JFrame;
 
-public class HuffmanCode extends javax.swing.JFrame {
+public class HuffmanCode extends JFrame {
 
+	private static final long serialVersionUID = 1L;
 	File file;
 	Huffman huffman = new Huffman();
 
